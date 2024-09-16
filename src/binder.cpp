@@ -1,6 +1,20 @@
 #include <pybind11/pybind11.h>
 
-#include "mymath.h"
+int add(int a, int b) 
+{
+    return a + b;
+}
+
+
+int subtract(int a, int b) 
+{
+    return a - b;
+}
+
+
+float idivision(int a, int b) {
+    return (b != 0) ? (a / b) : 0;
+}
 
 
 #define STRINGIFY(x) #x
@@ -31,7 +45,12 @@ PYBIND11_MODULE(tleng3, m) {
     )pbdoc");
 
     m.def("subtract", &subtract, R"pbdoc(
-        Add two numbers
+        Subtracts two numbers
+        Some other explanation about the add function.
+    )pbdoc");
+
+    m.def("idivision", &idivision, R"pbdoc(
+        divides two numbers
         Some other explanation about the add function.
     )pbdoc");
 
