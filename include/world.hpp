@@ -18,7 +18,6 @@ private:
     unsigned int m_id_count;
     std::set<int> m_dead_entities;
 
-
 };
 
 #endif

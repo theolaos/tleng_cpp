@@ -1,0 +1,5 @@
+ninja
+pybind11
+mypy
+setuptools
+flags
