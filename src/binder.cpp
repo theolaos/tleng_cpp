@@ -22,7 +22,7 @@ float idivision(int a, int b) {
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(tleng3, m) {
+PYBIND11_MODULE(_core, m) {
     m.doc() = R"rpdoc(
     
     Tleng3 Example plugin
