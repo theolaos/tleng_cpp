@@ -1,3 +1,5 @@
 /build
 /.vscode
 /.venv
+/tleng3.egg-info
+/dist
